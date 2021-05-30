@@ -3,12 +3,10 @@ services:
   - docker
 
 before_install:
-  - echo $AWS_ACCESS_KEY
-  - echo $AWS_SECRET_KEY
-  - docker build -t phiratio/docker-react -f Dockerfile .
+  - echo "Lets do this"
 
 script:
-  - docker run phiratio/docker-react npm run test -- --coverage
+  - docker build -t phiratio/docker-react -f Dockerfile .
 
 deploy:
   provider: elasticbeanstalk
