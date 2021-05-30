@@ -19,6 +19,6 @@ deploy:
   bucket_path: "agp"
   on:
     branch: master
-  access_key_id: "AKIAQADUDP6CFCYE4DN2"
-  secret_access_key: "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"
+  access_key_id: "$AWS_ACCESS_KEY"
+  secret_access_key: "$AWS_SECRET_KEY"
 
