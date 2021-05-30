@@ -5,7 +5,7 @@ services:
 before_install:
   - echo $AWS_ACCESS_KEY
   - echo $AWS_SECRET_KEY
-  - docker build -t phiratio/docker-react -f Dockerfile.dev .
+  - docker build -t phiratio/docker-react -f Dockerfile .
 
 script:
   - docker run phiratio/docker-react npm run test -- --coverage
